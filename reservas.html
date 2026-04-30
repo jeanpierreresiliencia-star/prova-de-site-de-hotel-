@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Paraíso - RESERVAS</title>
+    <link rel="icon" type="image/png" href="images/logo-hotel-paraiso.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo-hotel-paraiso.png" alt="Logo Hotel">
+        </div>
+
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="quartos.html">Quartos</a>
+            <a href="hospedes.html">Hóspedes</a>
+            <a href="localizacao.html">Localização</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="reservas.html">Reservas</a>
+        </nav>
+    </header>
+
+    <section class="topic">
+      
+        <a href="reservas.html" class="topic-button">
+            Faça sua reserva
+        </a>
+    </section>
+
+    <section class="main">
+<img src="images/logo-hotel-paraiso.png" alt="Logo Hotel">
+        <h2>Reservas</h2>
+
+        <div class="gallery">
+
+            <!-- ID ADICIONADO -->
+            <form action="">
+
+                <div class="card">
+
+                    <div>
+                        
+                    </div><br>
+
+                    <div class="form-group">
+                        <label>Nome Completo:</label>
+                        <input type="text" maxlength="200" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Telefone:</label>
+                        <input type="text" id="telefone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>E-Mail:</label>
+                        <input type="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tipo de Quarto:</label>
+                        <select id="tipo_quarto" required>
+                            <option value="">Selecione</option>
+                            <option value="1">Suíte Luxo</option>
+                            <option value="2">Quarto Casal</option>
+                            <option value="3">Quarto Sol</option>
+                            <option value="4">Quarto Mar</option>
+                            <option value="5">Suíte Família</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Quantidade Hóspedes:</label>
+                        <input type="number" min="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Data Entrada:</label>
+                        <input type="date" id="entrada" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Data Saída:</label>
+                        <input type="date" id="saida" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Forma Pagamento:</label>
+                        <select id="forma_pagamento" required>
+                            <option value="">Selecione</option>
+                            <option value="1">Dinheiro</option>
+                            <option value="2">Cartão</option>
+                            <option value="3">PIX</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Necessidade Especial:</label>
+                        <select id="necessidade" required>
+                            <option value="">Selecione</option>
+                            <option value="1">Sim</option>
+                            <option value="0">Não</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full">
+                        <label>Observações:</label>
+                        <textarea required></textarea>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit" onclick="cadastroReservasOk(event)">Cadastrar</button>
+                        <button type="reset" class="btn-secondary">Limpar</button>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- JS CORRETO -->
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

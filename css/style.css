@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+}
+
+.header {
+    background-color: #427AB5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  80px;
+    height: 150px;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+    padding: 0px;  
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.topic {
+    background-color: #406AAF;
+    text-align: center;
+    padding: 60px 200px;
+    color: white;
+    
+}
+
+.topic-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.topic-subtitle {
+    margin-bottom: 20px;
+}
+
+.topic-button {
+    background-color: #F7DD7D;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.main {
+    background-color: #F7DD7D;
+    padding: 40px;
+    min-height: 100vh;
+    
+}
+
+.main h2 {
+    text-align: center;
+    margin: 10px 10;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #FFE8BE;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    border-radius: 50px;
+     justify-content: center;
+}
+
+.card {
+     width: 250px;
+    display: block;
+    margin: auto;
+    align-items: center;
+}
+img {
+    width: 255px;
+    display: block;
+    margin: 20px auto;
+    align-items: center;
+     justify-content: center;
+}
+
+.card p {
+    padding: 10px;
+}
+
+.card-location {
+    background-color: #406AAF;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 600px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    border-radius: 50px;
+}
+
+form .card {
+    width: 650px;
+    background: #FFE8BE;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.form-group.full {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #406AAF;
+    text-align: justify;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #406AAF;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.form-group textarea {
+    height: 80px;
+    resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #406AAF;
+    box-shadow: 0 0 5px rgba(64, 106, 175, 0.5);
+    border-radius: 50px;
+}
+
+.form-group input::placeholder {
+    color: #406AAF;
+    border-radius: 50px;
+}
+
+.forma-pagamento,
+.necessidade-especial {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.forma-pagamento select:hover,
+.necessidade-especial select:hover {
+    border-color: #406AAF;
+}
+
+.form-buttons {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.form-buttons button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-buttons button:first-child {
+    background-color: #406AAF;
+    color: white;
+     border-radius: 50px;
+}
+
+.form-buttons button:first-child:hover {
+    background-color: #305a98;
+}
+
+.form-buttons .btn-secondary {
+    background-color: #406AAF;
+    border-radius: 50px;
+    
+}
+
+.form-buttons .btn-secondary:hover {
+    background-color: #406AAF;
+    
+}
